@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoX</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <div class="title-container">
+                <img src="icon.jpg" alt="Icon" class="icon">
+                <h1>ToDoX</h1>
+            </div>
+            <div class="input-container">
+                <input type="text" id="task-input" placeholder="Add new ..">
+                <button id="add-task-btn">Add</button>
+            </div>
+        </header>
+        <main>
+            <div class="filters">
+                <label for="filter-tasks">Filter</label>
+                <select id="filter-tasks">
+                    <option value="all">All</option>
+                    <option value="completed">Completed</option>
+                    <option value="pending">Pending</option>
+                </select>
+                <label for="sort-tasks">Sort</label>
+                <select id="sort-tasks">
+                    <option value="added-date">Added date</option>
+                    <option value="due-date">Due date</option>
+                </select>
+            </div>
+            <ul id="tasks"></ul>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
